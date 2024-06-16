@@ -1,0 +1,18 @@
+<header class="header"></header>
+<main class="main">
+	{{#> Dialog}}
+		{{>Title title='Вход'}}
+		<form class="signin">
+			<div class="signin__container">
+				<div class="signin__inputs">
+					{{>InputField type='text' title='Логин'  name='login'}}
+					{{>InputField type='password' title='Пароль' name='password'}}
+				</div>
+				{{>Button text='Войти'}}
+			</div>
+			{{>Link text='Нет аккаунта?' href='#' page='registration'}}
+		</form>
+	{{/Dialog}}
+</main>
+<footer class="footer"></footer>
+

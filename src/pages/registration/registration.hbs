@@ -1,0 +1,22 @@
+<header class="header"></header>
+<main class="main">
+	{{#> Dialog}}
+		{{>Title title='Регистрация'}}
+		<form class="registration">
+			<div class="registration__container">
+				<div class="registration__inputs">
+					{{>InputField type='email' title='Почта'  name='emil'}}
+					{{>InputField type='text' title='Логин'  name='login'}}
+					{{>InputField type='text' title='Имя'  name='first_name'}}
+					{{>InputField type='text' title='Фамилия'  name='second_name'}}
+					{{>InputField type='tel' title='Телефон'  name='phone' pattern='^(\+7|8)?[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$'}}
+					{{>InputField type='password' title='Пароль' name='password'}}
+					{{>InputField type='password' title='Пароль (ещё раз)' name='password'}}
+				</div>
+				{{>Button text='Зарегистрироваться'}}
+			</div>
+			{{>Link text='Войти' href='#' className='registration__link'}}
+		</form>
+	{{/Dialog}}
+</main>
+<footer class="footer"></footer>
