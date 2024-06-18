@@ -1,19 +1,23 @@
 
-{{#> Header}}  {{/ Header}}
+{{#> Header}} 
+	{{> Title title='ONE-on-ONE Social'}}
+{{/ Header}}
 {{#> Main}}
-	<div class="signin">
-		{{>Title title='Вход'}}
+	<section class="signin">
+		{{>Subtitle subtitle='Вход'}}
 		<form class="signin__form">
 			<div class="signin__container">
 				<div class="signin__inputs">
 					{{>InputField type='text' title='Логин'  name='login'}}
 					{{>InputField type='password' title='Пароль' name='password'}}
 				</div>
-				{{>Button text='Войти'}}
+				{{>Button text='Войти' page='error'}}
 			</div>
 			{{>Link text='Нет аккаунта?' href='#' page='registration'}}
 		</form>
-	</div>
+	</section>
 {{/ Main}}
-{{#> Footer}}  {{/ Footer}}
+{{#> Footer}} 
+	{{> Paragraph paragraph='© 2024 DoneAlejandro. Все права защищены.'}}
+ {{/ Footer}}
 

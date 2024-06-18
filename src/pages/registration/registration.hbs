@@ -1,7 +1,9 @@
-<header class="header"></header>
-<main class="main">
-	{{#> Dialog}}
-		{{>Title title='Регистрация'}}
+{{#> Header}} 
+	{{> Title title='ONE-on-ONE Social'}}
+{{/ Header}}
+{{#> Main}}
+	<section class="signin">
+		{{>Subtitle subtitle='Регистрация'}}
 		<form class="registration">
 			<div class="registration__container">
 				<div class="registration__inputs">
@@ -13,10 +15,12 @@
 					{{>InputField type='password' title='Пароль' name='password'}}
 					{{>InputField type='password' title='Пароль (ещё раз)' name='password'}}
 				</div>
-				{{>Button text='Зарегистрироваться'}}
+				{{>Button text='Зарегистрироваться' page='chat'}}
 			</div>
-			{{>Link text='Войти' href='#' className='registration__link'}}
+			{{>Link text='Войти' href='#' className='registration__link' page='signin'}}
 		</form>
-	{{/Dialog}}
-</main>
-<footer class="footer"></footer>
+	</section>
+{{/ Main}}
+{{#> Footer}} 
+	{{> Paragraph paragraph='© 2024 DoneAlejandro. Все права защищены.'}}
+ {{/ Footer}}

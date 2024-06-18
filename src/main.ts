@@ -10,6 +10,8 @@ interface Pages {
 const pages: Pages = {
 	signin: [Pages.SigninPage],
 	registration: [Pages.RegistrationPage],
+	error: [Pages.ErrorPage],
+	chat: [Pages.ChatPage],
 };
 
 Object.entries(Components as ComponentsType).forEach(([name, component]) => {
