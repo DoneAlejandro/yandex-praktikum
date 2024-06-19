@@ -26,7 +26,7 @@ function navigate(page: string): void {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-	navigate('signin');
+	navigate('chat');
 });
 
 document.addEventListener('click', e => {

@@ -1,3 +1,18 @@
 <li class="dialog">
-	{{> Image src='' alt='avatar' className='dialog__avatar'}}
+	{{#if avatar}}
+	<div class='dialog__avatar'>
+		{{> Image src='{{avatar}}' alt='{{name}}' }}
+	</div>
+	{{else}}
+	<div class='dialog__avatar'>
+		{{> Image src='../../assets/img/profile.jpg'}}
+	</div>
+	{{/if}}
+	<div>
+		<span>
+			{{name}}
+		</span>
+		{{> Paragraph paragraph='{{message}}' }}
+	</div>
+	
 </li>
