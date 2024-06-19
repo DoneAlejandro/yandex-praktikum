@@ -1,15 +1,14 @@
 export { Button } from './button';
+export { Copyright } from './copyright';
 export { DialogItem } from './dialog-item';
 export { DialogList } from './dialog-list';
 export { ErrorCode } from './error-code';
 export { ErrorText } from './error-text';
 export { Footer } from './footer';
 export { Header } from './header';
-export { Image } from './image';
 export { Input } from './input';
 export { InputField } from './input-field';
 export { Link } from './link';
 export { Main } from './main';
-export { Paragraph } from './paragraph';
 export { Subtitle } from './subtitle';
 export { Title } from './title';

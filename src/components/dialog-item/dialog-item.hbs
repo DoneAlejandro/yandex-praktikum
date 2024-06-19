@@ -1,18 +1,18 @@
 <li class="dialog">
 	{{#if avatar}}
 	<div class='dialog__avatar'>
-		{{> Image src='{{avatar}}' alt='{{name}}' }}
+		<img src={{avatar}} alt={{name}}>
 	</div>
 	{{else}}
 	<div class='dialog__avatar'>
-		{{> Image src='../../assets/img/profile.jpg'}}
+		<img src='https://github.com/DoneAlejandro/yandex-praktikum/blob/sprint_1/src/assets/img/profile.jpg?raw=true' alt="profile">
 	</div>
 	{{/if}}
 	<div>
 		<span>
 			{{name}}
 		</span>
-		{{> Paragraph paragraph='{{message}}' }}
+		<p>{{message}}</p>
 	</div>
 	
 </li>

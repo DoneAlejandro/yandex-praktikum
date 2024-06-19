@@ -8,7 +8,7 @@ export interface Components {
 	ErrorText: string;
 	Footer: string;
 	Header: string;
-	Paragraph: string;
+	Сopyright: string;
 	Subtitle: string;
 	Main: string;
 	Image: string;

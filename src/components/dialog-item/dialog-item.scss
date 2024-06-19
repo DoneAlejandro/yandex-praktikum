@@ -1,0 +1,11 @@
+.dialog {
+	display: flex;
+	height: 100%;
+	padding: 8px;
+	&__avatar {
+		width: 3.375rem;
+		height: 3.375rem;
+		margin-right: 0.5rem;
+		border-radius: 50%;
+	}
+}

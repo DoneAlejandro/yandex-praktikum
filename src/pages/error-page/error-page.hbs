@@ -4,11 +4,11 @@
 {{#> Main}}
 	<section class="error">
 		{{> ErrorCode code='500' className='error__code'}}
-		{{> Image src='https://github.com/DoneAlejandro/yandex-praktikum/blob/sprint_1/src/assets/img/fixiki.png?raw=true' alt='fixiki' className='error__image'}}
+		<img src="https://github.com/DoneAlejandro/yandex-praktikum/blob/sprint_1/src/assets/img/fixiki.png?raw=true" alt="fixiki">
 		{{> ErrorText text='Мы уже фиксим' className='error__text'}}
 		{{> Link text='Назад к чатам' href='#' page='signin' className='error__link'}}
 	</section>
 {{/ Main}}
 {{#> Footer}} 
-	{{> Paragraph paragraph='© 2024 DoneAlejandro. Все права защищены.'}}
+	{{> Copyright copyright='© 2024 DoneAlejandro. Все права защищены.'}}
  {{/ Footer}}
