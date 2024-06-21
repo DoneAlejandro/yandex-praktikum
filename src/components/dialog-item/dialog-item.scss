@@ -1,11 +1,15 @@
 .dialog {
 	display: flex;
-	height: 100%;
+	align-items: center;
 	padding: 8px;
+	border-bottom: 1px solid #555;
 	&__avatar {
 		width: 3.375rem;
 		height: 3.375rem;
 		margin-right: 0.5rem;
 		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }
