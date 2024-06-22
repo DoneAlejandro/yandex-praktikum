@@ -10,5 +10,7 @@ export { Input } from './input';
 export { InputField } from './input-field';
 export { Link } from './link';
 export { Main } from './main';
+export { MenuBurger } from './menu-burger';
 export { Subtitle } from './subtitle';
 export { Title } from './title';
+export { InputSearch } from './input-search';

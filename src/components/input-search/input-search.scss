@@ -1,0 +1,26 @@
+.input-container {
+	position: relative;
+	&__input {
+		padding: 8px 12px 8px 36px;
+		border: none;
+		border-radius: 20px;
+		outline: none;
+		background-color: #2c2c2c;
+		color: white;
+		width: 100%;
+		&::placeholder {
+			color: #b0b0b0;
+		}
+	}
+	&__icon {
+		position: absolute;
+		left: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 22px;
+		height: 22px;
+		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M10 2a8 8 0 105.293 14.293l5.702 5.702 1.414-1.414-5.702-5.702A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}

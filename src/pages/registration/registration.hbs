@@ -1,12 +1,12 @@
 {{#> Header}} 
 	{{> Title title='ONE-on-ONE Social'}}
 {{/ Header}}
-{{#> Main}}
-	<section class="signin">
+{{#> Main className='main-registration'}}
+	<section class="registration">
 		{{>Subtitle subtitle='Регистрация'}}
-		<form class="registration">
-			<div class="registration__container">
-				<div class="registration__inputs">
+		<form class="registration-form">
+			<div class="registration-form__container">
+				<div class="registration-form__inputs">
 					{{>InputField type='email' title='Почта'  name='emil'}}
 					{{>InputField type='text' title='Логин'  name='login'}}
 					{{>InputField type='text' title='Имя'  name='first_name'}}
@@ -17,7 +17,7 @@
 				</div>
 				{{>Button text='Зарегистрироваться' page='chat'}}
 			</div>
-			{{>Link text='Войти' href='#' className='registration__link' page='signin'}}
+			{{>Link text='Войти' href='#' className='registration-form__link' page='signin'}}
 		</form>
 	</section>
 {{/ Main}}

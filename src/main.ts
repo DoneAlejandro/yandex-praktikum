@@ -12,6 +12,7 @@ const pages: Pages = {
 	registration: [Pages.RegistrationPage],
 	error: [Pages.ErrorPage],
 	chat: [Pages.ChatPage],
+	profile: [Pages.ProfilePage],
 };
 
 Object.entries(Components as ComponentsType).forEach(([name, component]) => {
@@ -26,7 +27,7 @@ function navigate(page: string): void {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-	navigate('chat');
+	navigate('profile');
 });
 
 document.addEventListener('click', e => {

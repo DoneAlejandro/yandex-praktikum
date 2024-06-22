@@ -1,8 +1,12 @@
 {{#> Main className='main-chat'}}
 	<section class="main-chat__list">
+		{{#> Header className='header-chat'}}
+			{{> MenuBurger}}
+			{{> InputSearch placeholder='Поиск'}}
+		{{/ Header}}
 		{{> DialogList}}
 	</section>
-	<section class="main-chat_dialog">
-		<span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo et ipsam quibusdam aspernatur veniam? Laboriosam molestiae consequatur voluptatum. Expedita hic blanditiis laborum cupiditate aspernatur quam, non exercitationem esse eum voluptatibus?</span>
+	<section class='main-chat__dialog'>
+		
 	</section>
 {{/ Main}}

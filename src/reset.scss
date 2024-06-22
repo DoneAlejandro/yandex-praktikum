@@ -86,7 +86,7 @@ body {
 	height: 100%;
 	line-height: 1;
 	font-size: 24px;
-	font-family: $body-font-family;
+	font-family: $font-body;
 }
 body {
 	display: flex;
@@ -98,22 +98,16 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	background-color: #111112;
 }
 header {
 	padding: 10px 0;
-	background-color: #111112;
 }
 
 main {
 	flex: 1;
-	// display: flex;
-	// justify-content: center;
-	// align-items: center;
-	background-color: #111112;
-	// padding: 0 10px;
 }
 
 footer {
 	padding: 10px 0;
-	background-color: #111112;
 }

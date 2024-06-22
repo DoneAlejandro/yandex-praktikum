@@ -11,7 +11,8 @@ export interface Components {
 	Сopyright: string;
 	Subtitle: string;
 	Main: string;
-	Image: string;
+	MenuBurger: string;
 	DialogList: string;
 	DialogItem: string;
+	InputSearch: string;
 }
