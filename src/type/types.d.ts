@@ -8,11 +8,12 @@ export interface Components {
 	ErrorText: string;
 	Footer: string;
 	Header: string;
-	Сopyright: string;
+	Copyright: string;
 	Subtitle: string;
 	Main: string;
 	MenuBurger: string;
 	DialogList: string;
 	DialogItem: string;
 	InputSearch: string;
+	PopUp: string;
 }

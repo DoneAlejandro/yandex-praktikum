@@ -14,3 +14,4 @@ export { MenuBurger } from './menu-burger';
 export { Subtitle } from './subtitle';
 export { Title } from './title';
 export { InputSearch } from './input-search';
+export { PopUp } from './pop-up'

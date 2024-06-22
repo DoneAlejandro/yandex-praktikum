@@ -13,6 +13,7 @@ const pages: Pages = {
 	error: [Pages.ErrorPage],
 	chat: [Pages.ChatPage],
 	profile: [Pages.ProfilePage],
+	errorFourth: [Pages.ErrorPageFourth],
 };
 
 Object.entries(Components as ComponentsType).forEach(([name, component]) => {
@@ -27,7 +28,7 @@ function navigate(page: string): void {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-	navigate('profile');
+	navigate('signin');
 });
 
 document.addEventListener('click', e => {
@@ -39,3 +40,4 @@ document.addEventListener('click', e => {
 		e.stopImmediatePropagation();
 	}
 });
+
