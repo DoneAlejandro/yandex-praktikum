@@ -1,24 +1,42 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+import Handlebars from 'handlebars';
+import * as Components from './components';
+import * as Pages from './pages';
+import { Components as ComponentsType } from './type/types';
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+interface Pages {
+	[key: string]: [string, any?];
+}
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+const pages: Pages = {
+	signin: [Pages.SigninPage],
+	registration: [Pages.RegistrationPage],
+	error: [Pages.ErrorPage],
+	chat: [Pages.ChatPage],
+	profile: [Pages.ProfilePage],
+	errorFourth: [Pages.ErrorPageFourth],
+};
+
+Object.entries(Components as ComponentsType).forEach(([name, component]) => {
+	Handlebars.registerPartial(name, component);
+});
+
+function navigate(page: string): void {
+	const [sours, args] = pages[page];
+	const handlebarsCompile = Handlebars.compile(sours);
+	const app = document.getElementById('app')!;
+	app.innerHTML = handlebarsCompile(args);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	navigate('signin');
+});
+
+document.addEventListener('click', e => {
+	const target = e.target as HTMLElement;
+	const page = target.getAttribute('page');
+	if (page) {
+		navigate(page);
+		e.preventDefault();
+		e.stopImmediatePropagation();
+	}
+});
