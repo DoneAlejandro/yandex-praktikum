@@ -1,5 +1,5 @@
+@import '../../assets/variables.scss';
 .copyright {
-	height: 3%;
-	font-size: 9px;
-	color: #ffffff;
+	font-size: $font-nano;
+	color: $text-color;
 }

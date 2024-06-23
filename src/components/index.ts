@@ -8,10 +8,10 @@ export { Footer } from './footer';
 export { Header } from './header';
 export { Input } from './input';
 export { InputField } from './input-field';
+export { InputSearch } from './input-search';
 export { Link } from './link';
 export { Main } from './main';
 export { MenuBurger } from './menu-burger';
+export { PopUp } from './pop-up';
 export { Subtitle } from './subtitle';
 export { Title } from './title';
-export { InputSearch } from './input-search';
-export { PopUp } from './pop-up'

@@ -1,3 +1,4 @@
+@import '../../assets/variables.scss';
 .main-registration {
 	display: flex;
 	justify-content: center;
@@ -5,10 +6,10 @@
 	padding: 0 10px;
 }
 .registration {
-	background: #242426;
-	padding: 20px;
+	background: $profile-bgcolor;
+	padding: $profile-padding;
 	border-radius: 10px;
-	box-shadow: 0 4px 12px rgba(13, 35, 67, 0.03);
+	box-shadow: $profile-box-shadow;
 	max-width: 400px;
 	width: 100%;
 }

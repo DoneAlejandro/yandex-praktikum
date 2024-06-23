@@ -1,3 +1,4 @@
+@import '../../assets/variables.scss';
 .header-profile {
 	display: flex;
 	flex-direction: column;
@@ -5,10 +6,10 @@
 	padding: 15px 3px;
 	height: 100%;
 	&__avatar {
-		width: 5.375rem;
-		height: 5.375rem;
+		width: $header-avatar-width;
+		height: $header-avatar-height;
 		img {
-			border-radius: 50%;
+			border-radius: $header-avatar-bradius;
 		}
 	}
 }
@@ -19,10 +20,10 @@
 	padding: 0 10px;
 }
 .profile {
-	background: #242426;
-	padding: 20px;
+	background: $profile-bgcolor;
+	padding: $profile-padding;
 	border-radius: 10px;
-	box-shadow: 0 4px 12px rgba(13, 35, 67, 0.03);
+	box-shadow: $profile-box-shadow;
 	max-width: 400px;
 	width: 100%;
 }

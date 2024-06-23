@@ -1,11 +1,12 @@
+@import '../../assets/variables.scss';
 .error-text {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	&__text {
-		font-weight: 500;
-		font-size: 20px;
+		font-weight: $font-regular;
+		font-size: $font-big;
 		text-align: center;
-		color: #ffffff;
+		color: $text-color;
 	}
 }

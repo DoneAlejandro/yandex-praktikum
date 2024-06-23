@@ -1,8 +1,8 @@
 @import '../../assets/variables.scss';
 .dialog {
 	&__line {
-		height: 1.5px;
-		background-color: #555;
+		height: $height-line;
+		background-color: $color-line;
 		margin: 3px 0;
 	}
 	&__container {
@@ -17,14 +17,12 @@
 			cursor: default;
 		}
 	}
-
-	// border-bottom: 1px solid #555;
 	&__avatar {
 		grid-area: a;
-		width: 3.375rem;
-		height: 3.375rem;
+		width: $avatar-width;
+		height: $avatar-height;
 		margin-right: 0.5rem;
-		border-radius: 50%;
+		border-radius: $avatar-radius;
 		display: flex;
 		align-items: center;
 		justify-content: center;

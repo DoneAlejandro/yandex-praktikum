@@ -1,12 +1,13 @@
+@import '../../assets/variables.scss';
 .input {
 	width: 100%;
-	padding: 10px;
+	padding: $input-padding;
 	margin-bottom: 15px;
-	border-bottom: 1px solid #3369f3;
-	color: #fff;
+	border-bottom: $input-border;
+	color: $input-text-color;
 	&::placeholder {
-		font-size: 13px;
-		color: #999;
-		opacity: 0.5;
+		font-size: $font-regular;
+		color: $input-placeholder-color;
+		opacity: $input-opacity;
 	}
 }

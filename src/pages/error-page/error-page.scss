@@ -1,19 +1,20 @@
+@import '../../assets/variables.scss';
 .main-error {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0 10px;
+	padding: $main-padding;
 }
 .error {
 	&__code {
-		font-weight: 500;
-		font-size: 40px;
+		font-weight: $font-weight-regular;
+		font-size: $font-large;
 		margin-bottom: 20px;
 		text-align: center;
 	}
 	&__text {
-		font-weight: 500;
-		font-size: 20px;
+		font-weight: $font-weight-regular;
+		font-size: $font-big;
 		margin-bottom: 70px;
 		text-align: center;
 	}

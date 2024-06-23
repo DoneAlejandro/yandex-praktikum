@@ -1,16 +1,16 @@
+@import '../../assets/variables.scss';
 .button {
 	width: 100%;
 	padding: 15px;
-	background-color: #3369f3;
-	border: none;
+	background-color: $button-bgcolor;
 	border-radius: 8px;
-	color: white;
-	font-size: 13px;
+	color: $button-color;
+	font-size: $font-regular;
 	cursor: pointer;
 	text-align: center;
 	transition: background-color 0.3s ease;
 }
 
 .button:hover {
-	background-color: #0056b3;
+	background-color: $button-bghover;
 }
