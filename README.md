@@ -34,4 +34,4 @@ npm run build
 ## Структура проекта
 
 **Вот краткий обзор структуры проекта:**
-![Структура]('./src/assets/img/project.jpg')
+![Структура](https://github.com/DoneAlejandro/yandex-praktikum/blob/sprint_1/src/assets/img/project.jpg?raw=true)
