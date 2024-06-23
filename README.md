@@ -1,6 +1,5 @@
 # One-on-One Social
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://app.netlify.com/sites/one-on-one-social/deploys)
 
 One-on-One Social — это современное веб-приложение, созданное с использованием Handlebars, TypeScript и SCSS. Проект разработан с использованием компонентного подхода для обеспечения модульности и переиспользуемости кода. Приложение собрано с помощью Vite и размещено на [Netlify](https://one-on-one-social.netlify.app/).
 
