@@ -35,7 +35,7 @@ npm run build
 ## Структура проекта
 
 **Вот краткий обзор структуры проекта:**
-
+``
 one-on-one-social/
 ├── public/ 		# Статические файлы
 ├── src/
@@ -48,3 +48,4 @@ one-on-one-social/
 ├── package.json 	# Зависимости и скрипты проекта
 ├── vite.config.ts 	# Конфигурация Vite
 └── README.md 		# Этот файл
+``
